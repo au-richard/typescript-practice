@@ -38,16 +38,35 @@ calculateTax(15_000);
 calculateTax(10_000, 2023);
 
 // Objects
-let employee: {
+// This first way would make you redeclare a new employee object every time I want to use one
+// let employee: {
+//   // read only makes sure you can't change object key value
+//   readonly id: number,
+//   name: string,
+//   retire: (date: Date) => void;
+// } = {
+//   id: 1,
+//   name: "Richard",
+//   retire: (date: Date) => {
+//     console.log(date);
+//   }
+// };
+
+// Using Type for modular code in objects
+// Pascal Case for type
+// Can reuse type like Employee in multiple different places
+type Employee = {
   // read only makes sure you can't change object key value
   readonly id: number,
   name: string,
   retire: (date: Date) => void;
-} = {
+};
+let employee: Employee = {
   id: 1,
   name: "Richard",
   retire: (date: Date) => {
     console.log(date);
   }
 };
+
 
