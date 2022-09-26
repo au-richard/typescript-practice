@@ -25,4 +25,11 @@ function calculateTax(income, taxYear = 2022) {
 }
 calculateTax(15000);
 calculateTax(10000, 2023);
+let employee = {
+    id: 1,
+    name: "Richard",
+    retire: (date) => {
+        console.log(date);
+    }
+};
 //# sourceMappingURL=index.js.map

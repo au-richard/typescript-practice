@@ -37,3 +37,17 @@ function calculateTax(income: number, taxYear = 2022): number {
 calculateTax(15_000);
 calculateTax(10_000, 2023);
 
+// Objects
+let employee: {
+  // read only makes sure you can't change object key value
+  readonly id: number,
+  name: string,
+  retire: (date: Date) => void;
+} = {
+  id: 1,
+  name: "Richard",
+  retire: (date: Date) => {
+    console.log(date);
+  }
+};
+
