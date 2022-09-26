@@ -20,4 +20,7 @@ var Size;
 ;
 let mySize = Size.Medium;
 console.log(mySize);
+function calculateTax(income) {
+    return income < 50000 ? income * 1.2 : income * 1.3;
+}
 //# sourceMappingURL=index.js.map

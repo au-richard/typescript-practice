@@ -28,3 +28,8 @@ let user: [number, string] = [1, "Richard"];
 enum Size { Small = "s", Medium = "m", Large = "l" };
 let mySize: Size = Size.Medium;
 console.log(mySize);
+
+// Functions
+function calculateTax(income: number): number {
+  return income < 50_000 ? income * 1.2 : income * 1.3;
+}
