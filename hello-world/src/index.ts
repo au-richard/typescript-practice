@@ -70,3 +70,20 @@ let employee: Employee = {
 };
 
 
+// age Calculator
+const ageCalculator = function (name: string, yearOfBirth: number, currentYear: number): string {
+  let age = 0;
+  if (yearOfBirth > currentYear) {
+    console.log("This is invalid input");
+
+    return "Invalid input. Birth year greater than current year.";
+  } else {
+    age = currentYear - yearOfBirth;
+    console.log("This is age:" + age);
+
+    return `${name} is ${age} years old.`;
+  }
+};
+console.log(ageCalculator("Suzie", 1984, 2016));
+console.log(ageCalculator("Jack", 2004, 2016));
+console.log(ageCalculator("Ali", 2015, 2015));
