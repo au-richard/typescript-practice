@@ -7,6 +7,6 @@ let bins: {
   recycling: 0,
   compost: 0
 };
-const smartGarbage = function (trash: string, bins: object) {
-  if (trash === Object.keys(bins))
-};
+// const smartGarbage = function (trash: string, bins: object) {
+//   if (trash === Object.keys(bins))
+// };
