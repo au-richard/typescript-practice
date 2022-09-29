@@ -12,6 +12,9 @@ const whereCanIPark = function (spots, vehicle) {
             else if (vehicle === "motorcycle" && (spots[r][c] === "R" || spots[r][c] === "S" || spots[r][c] === "M")) {
                 openSpot = [c, r];
             }
+            else {
+                return false;
+            }
         }
     }
     ;
