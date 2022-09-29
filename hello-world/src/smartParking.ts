@@ -1,8 +1,11 @@
-// const whereCanIPark = function (spots: string[], vehicle: string): array {
-//   let openSpot = false;
-//   for (let r = 0; r < spots.length; r++) {
-//     for (let c = 0; c < spots[r].length; c++) {
-
-//     }
-//   }
-// };
+const whereCanIPark = function (spots: string[], vehicle: string) {
+  let openSpot: number[] = [0, 0];
+  for (let r = 0; r < spots.length; r++) {
+    for (let c = 0; c < spots[r].length; c++) {
+      if (vehicle === "regular" && spots[r][c] === "R") {
+        openSpot = [c, r];
+      }
+    }
+  }
+  return openSpot;
+};
