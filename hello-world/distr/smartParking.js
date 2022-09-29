@@ -6,6 +6,9 @@ const whereCanIPark = function (spots, vehicle) {
             if (vehicle === "regular" && spots[r][c] === "R") {
                 openSpot = [c, r];
             }
+            else if (vehicle === "small" && (spots[r][c] === "R" || spots[r][c] === "S")) {
+                openSpot = [c, r];
+            }
         }
     }
     return openSpot;
