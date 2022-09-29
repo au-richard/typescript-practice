@@ -1,6 +1,7 @@
 "use strict";
 const whereCanIPark = function (spots, vehicle) {
     let openSpot = [0, 0];
+    let result = false;
     for (let r = 0; r < spots.length; r++) {
         for (let c = 0; c < spots[r].length; c++) {
             if (vehicle === "regular" && spots[r][c] === "R") {
@@ -13,11 +14,38 @@ const whereCanIPark = function (spots, vehicle) {
                 openSpot = [c, r];
             }
             else {
-                return false;
+                result;
             }
         }
     }
     ;
-    return openSpot;
+    if (openSpot[0] !== 0 && openSpot[1] !== 0) {
+        return openSpot;
+    }
+    else {
+        return result;
+    }
 };
+console.log(whereCanIPark([
+    ['s', 's', 's', 'S', 'R', 'M'],
+    ['s', 'M', 's', 'S', 'r', 'M'],
+    ['s', 'M', 's', 'S', 'r', 'm'],
+    ['S', 'r', 's', 'm', 'r', 'M'],
+    ['S', 'r', 's', 'm', 'r', 'M'],
+    ['S', 'r', 'S', 'M', 'M', 'S']
+], 'regular'));
+console.log(whereCanIPark([
+    ['M', 'M', 'M', 'M'],
+    ['M', 's', 'M', 'M'],
+    ['M', 'M', 'M', 'M'],
+    ['M', 'M', 'r', 'M']
+], 'small'));
+console.log(whereCanIPark([
+    ['s', 's', 's', 's', 's', 's'],
+    ['s', 'm', 's', 'S', 'r', 's'],
+    ['s', 'm', 's', 'S', 'r', 's'],
+    ['S', 'r', 's', 'm', 'r', 's'],
+    ['S', 'r', 's', 'm', 'R', 's'],
+    ['S', 'r', 'S', 'M', 'm', 'S']
+], 'motorcycle'));
 //# sourceMappingURL=smartParking.js.map
