@@ -1,3 +1,5 @@
+// Need to fix output results for all 3 to be correct
+
 // Need to add 2nd [] in type declaration for array within array
 const whereCanIPark = function (spots: string[][], vehicle: string) {
   let openSpot: number[] = [0, 0];
