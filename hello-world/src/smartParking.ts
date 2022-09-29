@@ -6,12 +6,13 @@ const whereCanIPark = function (spots: string[], vehicle: string) {
         openSpot = [c, r];
       } else if (vehicle === "small" && (spots[r][c] === "R" || spots[r][c] === "S")) {
         openSpot = [c, r];
-        //   } else if (vehicle === "motorcycle" && (spots[r][c] === "R" || spots[r][c] === "S" || spots[r][c] === "M")) {
-        //     openSpot = [c, r];
-        //   } else {
-        //     return false;
+      } else if (vehicle === "motorcycle" && (spots[r][c] === "R" || spots[r][c] === "S" || spots[r][c] === "M")) {
+        openSpot = [c, r];
       }
+      // else {
+      //     return false;
+      // }
     }
-  }
+  };
   return openSpot;
 };

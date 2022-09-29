@@ -9,8 +9,12 @@ const whereCanIPark = function (spots, vehicle) {
             else if (vehicle === "small" && (spots[r][c] === "R" || spots[r][c] === "S")) {
                 openSpot = [c, r];
             }
+            else if (vehicle === "motorcycle" && (spots[r][c] === "R" || spots[r][c] === "S" || spots[r][c] === "M")) {
+                openSpot = [c, r];
+            }
         }
     }
+    ;
     return openSpot;
 };
 //# sourceMappingURL=smartParking.js.map
