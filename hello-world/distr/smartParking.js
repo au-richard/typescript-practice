@@ -1,7 +1,6 @@
 "use strict";
 const whereCanIPark = function (spots, vehicle) {
     let openSpot = [0, 0];
-    let result = false;
     for (let r = 0; r < spots.length; r++) {
         for (let c = 0; c < spots[r].length; c++) {
             if (vehicle === "regular" && spots[r][c] === "R") {
@@ -13,18 +12,9 @@ const whereCanIPark = function (spots, vehicle) {
             else if (vehicle === "motorcycle" && (spots[r][c] === "R" || spots[r][c] === "S" || spots[r][c] === "M")) {
                 openSpot = [c, r];
             }
-            else {
-                result;
-            }
         }
     }
-    ;
-    if (openSpot[0] !== 0 && openSpot[1] !== 0) {
-        return openSpot;
-    }
-    else {
-        return result;
-    }
+    return openSpot;
 };
 console.log(whereCanIPark([
     ['s', 's', 's', 'S', 'R', 'M'],
