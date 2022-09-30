@@ -6,16 +6,15 @@ const whereCanIPark = function (spots: string[][], vehicle: string) {
     for (let c = 0; c < spots[r].length; c++) {
       let openSpot = spots[r][c];
       if (vehicle === "regular" && openSpot === "R") {
-        return openSpot;
+        return [c, r];
       } else if (vehicle === "small" && (openSpot === "R" || openSpot === "S")) {
-        return openSpot;
+        return [c, r];
       } else if (vehicle === "motorcycle" && (openSpot === "R" || openSpot === "S" || openSpot === "M")) {
-        return [r, c];
-      } else {
-        return false;
+        return [c, r];
       }
     }
   }
+  return false;
 };
 
 console.log(whereCanIPark(
