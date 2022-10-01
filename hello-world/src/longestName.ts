@@ -2,13 +2,14 @@ interface singleInstructor {
   name: string,
   course: string;
 }
-const instructorWithLongestName = function (instructors: singleInstructor[]): Array[] {
+const instructorWithLongestName = function (instructors: singleInstructor[]) {
   let currentName = instructors[0].name;
   for (let i = 1; i < instructors.length; i++) {
-    if (instructors[i].name.length > instructors[i - 1].name.length) {
-      result.name = instructors[i].name;
+    if (instructors[i].name.length > currentName.length) {
+      currentName = instructors[i].name;
     }
   }
+  return currentName;
 };
 
 // console.log(instructorWithLongestName([
