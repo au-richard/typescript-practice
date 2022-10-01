@@ -1,1 +1,1 @@
-{"version":3,"file":"longestName.js","sourceRoot":"","sources":["../src/longestName.ts"],"names":[],"mappings":""}
+{"version":3,"file":"longestName.js","sourceRoot":"","sources":["../src/longestName.ts"],"names":[],"mappings":";AAIA,MAAM,yBAAyB,GAAG,UAAU,WAA+B;IACzE,IAAI,WAAW,GAAG,WAAW,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC;IACtC,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,WAAW,CAAC,MAAM,EAAE,CAAC,EAAE,EAAE;QAC3C,IAAI,WAAW,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,MAAM,GAAG,WAAW,CAAC,MAAM,EAAE;YACnD,WAAW,GAAG,WAAW,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC;SACnC;KACF;IACD,OAAO,WAAW,CAAC;AACrB,CAAC,CAAC"}
