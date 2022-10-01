@@ -1,11 +1,15 @@
-// const instructorWithLongestName = function (instructors: object[]): object {
-//   let currentName = instructors[0].name;
-//   for (let i = 1; i < instructors.length; i++) {
-//     if (instructors[i].name.length > instructors[i - 1].name.length) {
-//       result.name = instructors[i].name;
-//     }
-//   }
-// };
+interface singleInstructor {
+  name: string,
+  course: string;
+}
+const instructorWithLongestName = function (instructors: singleInstructor[]): Array[] {
+  let currentName = instructors[0].name;
+  for (let i = 1; i < instructors.length; i++) {
+    if (instructors[i].name.length > instructors[i - 1].name.length) {
+      result.name = instructors[i].name;
+    }
+  }
+};
 
 // console.log(instructorWithLongestName([
 //   { name: "Samuel", course: "iOS" },
