@@ -13,3 +13,5 @@ const coneVolume = (radius: number, height: number): number => {
   result = (PI * Math.pow(radius, 2) * height) / 3;
   return result;
 };
+
+console.log(45 < coneVolume(3, 5) && coneVolume(3, 5) < 49);
