@@ -12,4 +12,9 @@ const coneVolume = (radius, height) => {
     return result;
 };
 console.log(45 < coneVolume(3, 5) && coneVolume(3, 5) < 49);
+const prismVolume = (height, width, depth) => {
+    let result = 0;
+    result = (width * depth) * height;
+    return result;
+};
 //# sourceMappingURL=bouncyCastle.js.map

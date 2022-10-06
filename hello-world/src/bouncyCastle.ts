@@ -15,3 +15,9 @@ const coneVolume = (radius: number, height: number): number => {
 };
 
 console.log(45 < coneVolume(3, 5) && coneVolume(3, 5) < 49);
+
+const prismVolume = (height: number, width: number, depth: number): number => {
+  let result = 0;
+  result = (width * depth) * height;
+  return result;
+};
