@@ -6,4 +6,4 @@ const sphereVolume = (radius: number): number => {
   return result;
 };
 
-// console.log(4186 < sphereVolume(10) && sphereVolume(10) < 4189);
+console.log(4186 < sphereVolume(10) && sphereVolume(10) < 4189);
