@@ -6,4 +6,9 @@ const sphereVolume = (radius) => {
     return result;
 };
 console.log(4186 < sphereVolume(10) && sphereVolume(10) < 4189);
+const coneVolume = (radius, height) => {
+    let result = 0;
+    result = (PI * Math.pow(radius, 2) * height) / 3;
+    return result;
+};
 //# sourceMappingURL=bouncyCastle.js.map
