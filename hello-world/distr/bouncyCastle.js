@@ -18,4 +18,22 @@ const prismVolume = (height, width, depth) => {
     return result;
 };
 console.log(prismVolume(3, 4, 5) === 60);
+const largeSphere = {
+    type: 'sphere',
+    radius: 40
+};
+const smallSphere = {
+    type: 'sphere',
+    radius: 10
+};
+const cone = {
+    type: 'cone',
+    radius: 3,
+    height: 5
+};
+const duck = [
+    largeSphere,
+    smallSphere,
+    cone
+];
 //# sourceMappingURL=bouncyCastle.js.map
