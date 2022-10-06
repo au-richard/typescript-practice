@@ -17,4 +17,5 @@ const prismVolume = (height, width, depth) => {
     result = (width * depth) * height;
     return result;
 };
+console.log(prismVolume(3, 4, 5) === 60);
 //# sourceMappingURL=bouncyCastle.js.map
