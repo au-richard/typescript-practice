@@ -18,6 +18,18 @@ const prismVolume = (height, width, depth) => {
     return result;
 };
 console.log(prismVolume(3, 4, 5) === 60);
+const totalVolume = (solids) => {
+    let total = 0;
+    for (const solid of solids) {
+        if (solid.type === "sphere") {
+            total += sphereVolume(solid.radius);
+        }
+        else if (solid.type === "cone") {
+            total += coneVolume(solid.radius, solid.height);
+        }
+    }
+    return total;
+};
 const largeSphere = {
     type: 'sphere',
     radius: 40
