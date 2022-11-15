@@ -18,4 +18,3 @@ console.log(numVowels("aeiou"));
 console.log(numVowels("Artichoke"));
 console.log(numVowels("HAPPY BIRTHDAY"));
 console.log(numVowels("AEIOU"));
-//# sourceMappingURL=vowels.js.map

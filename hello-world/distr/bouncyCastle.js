@@ -49,4 +49,3 @@ const duck = [
     cone
 ];
 console.log(272000 < totalVolume(duck) && totalVolume(duck) < 275000);
-//# sourceMappingURL=bouncyCastle.js.map

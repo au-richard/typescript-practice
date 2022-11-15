@@ -16,4 +16,3 @@ console.log(multiplicationTable(5));
 console.log(multiplicationTable(10));
 console.log(multiplicationTable(12));
 console.log(multiplicationTable(23));
-//# sourceMappingURL=multiplyTable.js.map

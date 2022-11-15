@@ -38,4 +38,3 @@ console.log(whereCanIPark([
     ['S', 'r', 's', 'm', 'R', 's'],
     ['S', 'r', 'S', 'M', 'm', 'S']
 ], 'motorcycle'));
-//# sourceMappingURL=smartParking.js.map

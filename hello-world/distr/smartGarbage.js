@@ -4,4 +4,3 @@ let bins = {
     recycling: 0,
     compost: 0
 };
-//# sourceMappingURL=smartGarbage.js.map

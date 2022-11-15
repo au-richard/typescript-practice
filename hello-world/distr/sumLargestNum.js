@@ -15,4 +15,3 @@ console.log(sumLargestNum([10]));
 console.log(sumLargestNum([1, 10]));
 console.log(sumLargestNum([1, 2, 3]));
 console.log(sumLargestNum([10, 4, 34, 6, 92, 2]));
-//# sourceMappingURL=sumLargestNum.js.map

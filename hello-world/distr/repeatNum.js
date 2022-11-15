@@ -16,4 +16,3 @@ const repeatNum = function (data) {
 console.log(repeatNum([[1, 10]]));
 console.log(repeatNum([[1, 2], [2, 3]]));
 console.log(repeatNum([[10, 4], [34, 6], [92, 2]]));
-//# sourceMappingURL=repeatNum.js.map

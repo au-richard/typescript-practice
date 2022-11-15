@@ -70,6 +70,18 @@ let employee: Employee = {
 };
 
 
+// Interfaces - cannot hold single primitive types
+interface MathFunc {
+  (x: number, y: number): number;
+}
+const add: MathFunc = (x: number, y: number): number => x + y;
+const multiply: MathFunc = (x: number, y: number): number => x * y;
+console.log(`5 + 9 is ${add(5, 9)}`);
+console.log(`5 * 9 is ${multiply(5, 9)}`);
+
+
+
+
 // age Calculator
 const ageCalculator = function (name: string, yearOfBirth: number, currentYear: number): string {
   let age = 0;

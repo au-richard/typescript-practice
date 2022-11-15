@@ -19,4 +19,3 @@ console.log(instructorWithLongestName([
     { name: "David", course: "iOS" },
     { name: "Domascus", course: "Web" }
 ]));
-//# sourceMappingURL=longestName.js.map
