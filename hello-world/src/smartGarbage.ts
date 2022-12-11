@@ -16,7 +16,7 @@ let bins = {
   recycling: 0,
   compost: 0
 };
-const smartGarbage = function (trash, bins) {
+const smartGarbage = function (trash: number, bins: number) {
   bins[trash]++;
   return bins;
 };
