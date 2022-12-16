@@ -9,7 +9,7 @@
 // };
 // const smartGarbage = function (trash: string, bins: object) {
 //   if (trash === Object.keys(bins))
-// };
+// }; 
 
 let bins = {
   waste: 0,
