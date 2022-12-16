@@ -17,7 +17,7 @@ let bins = {
   compost: 0
 };
 // const smartGarbage = function (trash: number, bins: number) {
-//   // bins[trash]++;
+//   bins[trash]++;
 //   return bins;
 // };
 // console.log(smartGarbage("recycling", { waste: 4, recycling: 2, compost: 5 }));
