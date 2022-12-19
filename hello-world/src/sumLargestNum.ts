@@ -9,7 +9,6 @@ const sumLargestNum = function (data: number[]): string {
     return `The answer is ${num}.`;
   }
 };
-
 console.log(sumLargestNum([10]));
 console.log(sumLargestNum([1, 10]));
 console.log(sumLargestNum([1, 2, 3]));
