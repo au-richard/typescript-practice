@@ -5,6 +5,7 @@ const checkAir = function (samples: string[], threshold: number): string {
   }
   return ((counter % samples.length) > (threshold *= 10)) ? "Polluted" : "Clean";
 };
+
 console.log(checkAir(['clean', 'clean', 'dirty', 'clean', 'dirty', 'clean', 'clean', 'dirty', 'clean', 'dirty'],
   0.3
 ));
